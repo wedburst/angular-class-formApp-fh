@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'reactive',
-    loadChildren: () => import('./reactive/reactive-routing.module').then( m => m.ReactiveRoutingModule ),
+    loadChildren: () => import('./reactive/reactive.module').then( m => m.ReactiveModule ),
   },
   {
     path: 'auth',
